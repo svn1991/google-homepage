@@ -1,0 +1,170 @@
+body {
+	font-family: arial, sans-serif;
+	font-size: 10px;
+	background-color: #ffffff;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+nav {
+	height: 50px;
+    width: 100%;
+}
+
+nav ul {
+	float: right;
+    padding-right: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+	display: inline-block;
+    margin-left: 15px;
+}
+
+nav ul li.nav-more .nav-more-squares {
+	background-color: gray;
+    width: 4px;
+    height: 4px;
+    float: left;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+nav ul li.nav-more .nav-more-squares:nth-child(3n+3){
+     margin-right: 0;
+}
+
+nav ul li.nav-more .nav-more-squares:nth-child(3n+4){
+     clear: left;
+}
+
+nav ul li.nav-more .nav-more-squares:nth-child(n+7){
+     margin-bottom: 0;
+}
+
+nav ul li.nav-user {
+	height: 30px;
+    width: 30px;
+    background: #9e47ca;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+section.main {
+	height: calc(100vh - 130px);
+	display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+section.main .logo-wrapper {
+	height: 70px;
+    margin-top: 125px;
+}
+
+section.main .search-wrapper {
+	margin-top: 20px;
+	position: relative;
+}
+
+section.main .search-wrapper input{
+	width: 370px;
+    height: 33px;
+    padding-right: 45px;
+    border-radius: 25px;
+    border: 1px solid #cccbcb;
+    text-indent: 20px;
+    font-size: 13px;
+}
+
+section.main .search-wrapper .google-search-voice {
+	height: 20px;
+    display: block;
+    position: absolute;
+    bottom: 7px;
+    right: 15px;
+}
+
+section.main .search-buttons-wrapper {
+	margin-top: 20px;
+}
+
+section.main .search-buttons-wrapper .search-buttons-link {
+	height: 25px;
+    width: 100px;
+    display: flex;
+    background-color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    border-radius: 3px;
+    box-shadow: 1px 0px #e5e5e5;
+}
+
+section.main .search-buttons-wrapper .search-buttons-link.search-feeling-lucky-link {
+	margin-left: 10px;
+}
+
+section.main .google-story-wrapper {
+	margin-top: 20px;
+}
+
+section.main .translate-wrapper {
+	margin-top: 35px;
+}
+
+section.main .translate-wrapper .translate-link {
+	margin-right: 5px;
+}
+
+footer {
+	height: 80px;
+	background-color: #f2f2f2;
+}
+
+footer > div {
+	display: flex;
+	align-items: center;
+	padding: 0 25px;
+	height: 100%;
+}
+
+footer .location-wrapper {
+	height: 35px;
+	border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+footer .footer-links-wrapper {
+	font-size: 10px;
+	height: 45px;
+}
+
+footer .footer-links-wrapper ul {
+	width: 100%;
+}
+
+footer .footer-links-wrapper .footer-item:nth-child(-n+3) {
+	margin-right: 25px;
+    float: left;
+}
+
+footer .footer-links-wrapper .footer-item:nth-child(n+4) {
+	margin-left: 25px;
+    float: right;
+}
+
+footer .footer-links-wrapper .footer-item .footer-item-link {
+	color: #808080;
+}
